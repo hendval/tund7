@@ -18,10 +18,27 @@
 	
 	}
 	
-	$array = getCarData();
+	
+	
+	$keyword = "";
+	if(isset($_GET["keyword"])){
+		$keyword = $_GET["keyword"];
+		$array = getCarData($keyword);
+	} else {
+		$array = getCarData();
+	}
+
+	
 	
 ?>
 <h2>Tabel</h2>
+
+<form action="table.php" method="get">
+	<input type="search" name="keyword" value="<?=$keyword;?>">
+	<input type="submit">
+</form>
+
+
 <table border=1>
 	<tr>
 		<th>ID</th>
