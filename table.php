@@ -59,6 +59,7 @@
 			echo "<td>".$array[$i]->color."</td>";
 			echo "<td><a href='?delete=".$array[$i]->id."'>X</a>";
 			echo "<td><a href='?edit=".$array[$i]->id."'>Edit</a>";
+			echo "<td><a href='edit.php?edit_id=".$array[$i]->id."'>Test</a>";
 			echo "</tr>";
 			
 		}
