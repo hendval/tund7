@@ -34,6 +34,7 @@
 <h2>Tabel</h2>
 
 <form action="table.php" method="get">
+	<label for="search">Otsing:</label><br>
 	<input type="search" name="keyword" value="<?=$keyword;?>">
 	<input type="submit">
 </form>

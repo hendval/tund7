@@ -8,9 +8,7 @@
 		$search = "%%";
 		
 		if($keyword == ""){
-			echo "ei otsi";
 		} else {
-			echo "otsin ".$keyword;
 			$search = "%".$keyword."%";
 		}
 		
