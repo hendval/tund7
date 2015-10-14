@@ -63,7 +63,7 @@
 		if($stmt->execute()){
 			//sai kustutatud
 			//kustutame aadressirea tühjaks
-			//header("Location: table.php");
+			header("Location: table.php");
 		}
 		
 		$stmt->close();
